@@ -1,0 +1,14 @@
+﻿@using Pharmacy.Models
+@model List<DrugType>
+
+<ul>
+    @foreach (var type in Model as List<DrugType>)
+    {
+        <li>
+
+            <span>@type.Type</span>
+
+        </li>
+
+    }
+</ul>

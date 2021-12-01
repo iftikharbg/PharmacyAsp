@@ -1,0 +1,28 @@
+﻿@using Pharmacy.ViewsModels
+@using Pharmacy.Models
+@model DrugViewModel
+
+<ul>
+    @foreach (var drug in Model.Drugs as List<Drug>)
+    {
+    <li>
+        <span>@drug.Name</span>
+        <span>@drug.Price</span>
+        <span>@drug.Company</span>
+
+
+    </li>
+
+    }
+</ul>
+<ul>
+    @foreach (var type in Model.DrugTypes as List<DrugType>)
+    {
+        <li>
+           
+            <span>@type.Type</span>
+
+        </li>
+
+    }
+</ul>
